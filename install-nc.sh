@@ -5,7 +5,6 @@ if [ "$EUID" -ne 0 ]; then
   echo "Please run as root (use sudo)"
   exit 1
 fi
-
 echo "--- Updating system and installing dependencies ---"
 apt-get update && apt-get upgrade -y
 apt-get install -y ca-certificates curl gnupg lsb-release
